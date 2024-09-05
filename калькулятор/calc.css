@@ -1,0 +1,92 @@
+body {
+    margin: 0;
+    font-family: "Manrope", sans-serif;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1080px;
+    background-color: #2E3235;
+  }
+  
+  .calculator {
+    background: #595E61;
+    padding: 5px;
+    width: 400px;
+    min-width: 400px;
+    border-radius: 10px;
+  }
+  
+  .output {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: relative;
+    background: white;
+    min-height: 50px;
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.5);
+  }
+  
+  .output pre {
+    text-align: right;
+    font-size: 25px;
+    margin: 0;
+    font-family: "Manrope", sans-serif;
+    width: 288px;
+    overflow-x: auto;
+    
+  }
+  
+  .output pre::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .output #upper {
+    color: #424242;
+    font-size: 18px;
+  }
+  
+  .input {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .input button {
+    width: calc(30% - 55px);
+    height: 50px;
+    margin: 8px 12px;
+    border-radius: 50%;
+    background-color: #CEE7EB;
+    color: black;
+    font-size: 20px;
+    font-weight: 400;
+    cursor: pointer;
+    border: none;
+  }
+
+  .Delete{
+    width: calc(30% - 55px);
+    height: 50px;
+    margin: 8px 12px;
+    border-radius: 180px;
+    background-color: #CEE7EB;
+    color: black;
+    font-size: 20px;
+    font-weight: 400;
+    cursor: pointer;
+    border: none;
+    padding-top: 5px;
+  }
+  
+  .input button:hover {
+    background-color: #8AE2F0;
+  }
+  
+  .input button:active {
+    color: white;
+  }
